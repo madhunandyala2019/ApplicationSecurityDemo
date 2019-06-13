@@ -34,7 +34,7 @@
 
 		<action input="/login.jsp" name="LoginForm" path="/Login"
 			scope="session" type="com.ibm.security.LoginAction">
-			<forward name="success" path="/home.jsp" />
+			<forward name="success" path="/xssinput.jsp" />
 			<forward name="failure" path="/failure.jsp" />
 		</action>
 
@@ -45,11 +45,11 @@
 		
 		<action input="/xssinput.jsp" name="XSSLessonForm" path="/xssfix"
 			scope="session" type="com.ibm.security.XSSElementActionFix">
-			<forward name="success" path="/xssfix.jsp" />
+			<forward name="success" path="/xssfix2.jsp" />
 		</action>
 		
 
-		<action path="/xssinput" forward="/xssinput.jsp" />
+		<!--  <action path="/xssinput" forward="/xssinput.jsp" />-->
 		<action path="/xssinputfix" forward="/xssinputfix.jsp" />
 
 		<action input="/home.jsp" name="InformationLeakageForm" path="/Action"

@@ -8,15 +8,23 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
          
-        <link rel="stylesheet" type="text/css" href="main.css""/>
-      
+        <link rel="stylesheet" type="text/css" href="css/main.css""/>
+             
     </head>
     <body>
-    
-    <h1 align="Center">Security Application Demo</h1>
+    <div class="header">
+    <div class="title">
+     <h1 align="Center">DevSecOps Demo</h1>
+     </div>
+     <div class="image">
+     <img alt="" src="images/ibm-security-cybersecurity.jpg" style="width:250px;height:150px">
+    </div>
+    </div>
+   
+   
     <div class="login">
      
-        <h1 align="Center">Login</h1>
+        <!-- <h1 align="Center">Login</h1> -->
         <html:form action="/Login" >
             User Name : <html:text name="LoginForm" styleClass="input" property="userName" /> <br>
             Password  : <html:password name="LoginForm" styleClass="input" property="password" /> <br>

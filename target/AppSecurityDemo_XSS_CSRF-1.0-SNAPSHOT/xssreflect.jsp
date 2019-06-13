@@ -20,7 +20,7 @@
      <img alt="" src="images/ibm-security-cybersecurity.jpg" style="width:250px;height:150px">
     </div>
     </div>
-	 <h2 align="Center">XSS Issue exploited</h2>
+	 <h2 align="Center">XSS Issue replicated</h2>
 	<div class="login">
 		<!-- Sample HTML comment for getting caught in SAST (APPSCAN) -->
 		<%=request.getAttribute("username") %>

@@ -7,24 +7,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>XSS Input Page</title>
-<link rel="stylesheet" type="text/css" href="css/main.css""/>
+<link rel="stylesheet" type="text/css" href="main.css""/>
 </head>
 <body>
-	<div class="header">
-    <div class="title">
-     <h1 align="Center">DevSecOps Demo</h1>
-     </div>
-     <div class="image">
-     <img alt="" src="images/ibm-security-cybersecurity.jpg" style="width:250px;height:150px">
-    </div>
-    </div>
+	<h1 align="Center">Security Application Demo</h1>
+	<jsp:include page="menu.jsp" />
 	<div class="login">
-
-		<html:form action="/xssreflect">
-            Enter Text : <html:text name="XSSLessonForm"
+		<h1 align="Center">XSS Input Page</h1>
+		<html:form action="/xssfix">
+            User Name : <html:text name="XSSLessonForm"
 				styleClass="input" property="userName" />
 			
-			<html:submit value="Submit"
+			<html:submit value="XSS Testing"
 				styleClass="btn btn-primary btn-block btn-large" />
 		</html:form>
 	</div>
